@@ -14,3 +14,17 @@ function getHumanChoice() {
     }
     return choice;
 }
+
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice===computerChoice) {
+        console.log("Its a tie!!");
+    } else if ( (humanChoice==="rock" && computerChoice==="scissors")
+      || (humanChoice==="paper" && computerChoice==="rock")
+      || (humanChoice==="scissors" && computerChoice==="paper") ) {
+        humanScore++;
+        console.log(`You win!! Conputer lose!! ${humanChoice} beats ${computerChoice}`);
+    } else {
+        computerScore++;
+        console.log(`You lose!! Computer win!! ${computerChoice} beats ${humanChoice}`);
+    }
+}
