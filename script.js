@@ -1,4 +1,6 @@
 let choice_available = ["rock", "paper", "scissors"];
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     let choice_rand = Math.floor(Math.random() * 3);
